@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pedija</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+      
+    <script>
+      $(document).ready(function(){
+       $('a#hidePassword').click(function() {
+        var img = $(this).find("img")[0];
+        var input =$("#pass_log_id");
+        if (input.attr("type") == "text") {
+            input.attr("type", "password");
+            img.src = img.src.replace("padlock","hide_password");
+         } else {
+            input.attr("type", "text");
+            img.src = img.src.replace("hide_password","padlock");
+         } 
+        return false;
+        });
+      });
+    </script>
+      
+  </head>
+  <body>
+      <div class="mb-container">
+          <header class="row search-header">
+             <a href="#" class="col-1 crossPageIcon">
+                <img
+                src="css/assets/close%20(22).svg"
+                    style="width: 17px; height: 17px; vertical-align: bottom;" />
+             </a>
+             <div class="col searchBar">
+              <img src="css/assets/Mask Group 39.svg" />
+              <input type="text" placeholder="Search" >
+            </div>
+          </header>
+          
+          <section class="location-section">
+            <p class="section-header">
+              Current Location</p>
+            <div class="location-detect">
+                <img src="css/assets/crosshairs-gps.svg" style="width: 19.07pt; height: 19.07pt; display: inline" >
+               <p>Enable Location Services</p> 
+               <a href="#"> > </a>   
+            </div>  
+          </section>
+          
+          <section >
+              <div class="img-container">
+                <img src="css/assets/groceries.svg" >
+              </div>
+              <div class="img-container">
+                
+              </div>
+              <div class="img-container">
+                
+              </div>
+          </section>
+          
+          
+          
+          
+      </div>
+      
+  </body>  
+</html>    
