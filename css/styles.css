@@ -127,10 +127,13 @@ body {
 }
 .location-detect a {
     float: right;
-    font-size: 13pt;
-    font-family: pedija-bold; 
-    color: #AFB1BC;
     margin-top: 3px;
+}
+.location-detect a img {
+    fill: green;
+    color: #AFB1BC;
+    width: 10px;
+    height: 19px;
 }
 .location-detect a:hover {
      outline: none !important;
@@ -169,5 +172,9 @@ body {
 }
 
 input {
+    
+}
+
+img {
     
 }
