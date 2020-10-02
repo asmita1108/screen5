@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: pedija-bold;
-    src: url(../fonts/Product-Sans-Bold.ttf);
+    src: url(../fonts/poppins.bold.ttf);
 }
 @font-face {
     font-family: pedija-regular;
-    src: url(../fonts/Product-Sans-Regular.ttf);
+    src: url(../fonts/poppins.regular.ttf);
 }
 *{
     padding: 0;
@@ -117,8 +117,8 @@ body {
 }
 .location-detect p {
     width: auto;
-    height: auto;
-    font-size: 16pt;
+    height: 20px;
+    font-size: 14pt;
     text-align: left;
     color: #541871;
     opacity: 100%;
@@ -127,9 +127,10 @@ body {
 }
 .location-detect a {
     float: right;
-    font-size: 16pt;
+    font-size: 13pt;
     font-family: pedija-bold; 
     color: #AFB1BC;
+    margin-top: 3px;
 }
 .location-detect a:hover {
      outline: none !important;
