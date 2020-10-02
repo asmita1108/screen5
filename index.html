@@ -13,33 +13,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
       
-    <script>
-      $(document).ready(function(){
-       $('a#hidePassword').click(function() {
-        var img = $(this).find("img")[0];
-        var input =$("#pass_log_id");
-        if (input.attr("type") == "text") {
-            input.attr("type", "password");
-            img.src = img.src.replace("padlock","hide_password");
-         } else {
-            input.attr("type", "text");
-            img.src = img.src.replace("hide_password","padlock");
-         } 
-        return false;
-        });
-      });
-    </script>
-      
   </head>
   <body>
       <div class="mb-container">
-          <header class="row search-header">
-             <a href="#" class="col-1 crossPageIcon">
+          <header class="search-header">
+             <a href="#" class="crossPageIcon">
                 <img
                 src="css/assets/close%20(22).svg"
-                    style="width: 17px; height: 17px; vertical-align: bottom;" />
+                    style="width: 17px; height: 17px; vertical-align: middle;  margin-top: 12px;" />
              </a>
-             <div class="col searchBar">
+             <div class="searchBar">
               <img src="css/assets/Mask Group 39.svg" />
               <input type="text" placeholder="Search" >
             </div>
