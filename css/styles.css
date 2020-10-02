@@ -126,19 +126,17 @@ body {
     margin-left:10px;
     display: inline;
 }
-.location-detect a {
+
+.location-next-icon {
     float: right;
-    margin-top: 3px;
-}
-.location-detect a img {
-    fill: green;
+    margin-top: 5px;
     color: #AFB1BC;
     width: 10px;
     height: 19px;
 }
+
 .location-detect a:hover {
-     outline: none !important;
-     border: none;
+     text-decoration: none;
 }
 .location-section:after {
     display: block;
