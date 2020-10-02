@@ -43,7 +43,7 @@ body {
     display: block;
 }
 .search-header {
-    height: 40px;
+    height: 40pt;
     width: 100%;
 }
 
@@ -54,9 +54,10 @@ body {
 
 .searchBar {
   width: 93%;
+  height: 90%;
   border: 1pt solid #e3e3e3;
   background-color: #f5f4f4;
-  padding: 5px 10px 5px 10px;
+  padding: 10px;
   border-radius: 3pt;
   float: right;
 }
@@ -115,13 +116,13 @@ body {
     width: 100%;
 }
 .location-detect p {
-    width: 172pt;
-    height: 19pt;
+    width: auto;
+    height: auto;
     font-size: 16pt;
     text-align: left;
     color: #541871;
     opacity: 100%;
-    margin: 0px 10px;
+    margin-left:10px;
     display: inline;
 }
 .location-detect a {
