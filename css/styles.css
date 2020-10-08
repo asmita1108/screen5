@@ -36,12 +36,45 @@ body {
   padding: 20px 15px;
 }
 
+.location-next-icon {
+    display: block;
+    float: right;
+    margin-top: 5px;
+    width: 10.86pt;
+    height: 12.87pt;
+}
+/*-----------------------------------------------
+/* DIVIDER row */
+/* --------------------------------------------*/
+
+.divider-1pt:after {
+    display: block;
+    height: 1pt;
+    background-color: #EDEDED;
+    content: " ";
+    width: 375pt;
+    margin: 20px -15px 0px -15px;
+}
+.divider-4pt:after {
+    display: block;
+    height: 4pt;
+    background-color: #f5f4f4;
+    content: " ";
+    width: 100vw;
+    margin: 25pt -15px 0px -15px;
+}
+.divider-10pt:after {
+    display: block;
+    height: 10pt;
+    background-color: #EFF0F7;
+    content: " ";
+    width: 375pt;
+    margin: 40px -15px 0px -15px;
+}
 /*----------------------------------------------
 /* Header */
 /*----------------------------------------------*/
-.icon-holder {
-    display: block;
-}
+
 .search-header {
     height: 40pt;
     width: 100%;
@@ -53,7 +86,8 @@ body {
 }
 
 .searchBar {
-  width: 93%;
+  margin-left: 11px;    
+  width: calc(100% - 31px);
   height: 90%;
   border: 1pt solid #e3e3e3;
   background-color: #f5f4f4;
@@ -62,19 +96,19 @@ body {
   float: right;
 }
 .searchBar > img {
-  width: 15px;
+  width: 20px;
   height: auto;
-  vertical-align: baseline;    
+  vertical-align: sub;    
 }
 .searchBar > input {
   border: none;
-  width: 80%;
+  width: calc(100% - 50px);
   height: auto; 
   background: transparent;
   font-size: 14pt;
   padding-left: 8px;
   text-align: left;
-  color: #bcbfd1;
+  color: #242A4B;
   opacity: 100%;
  
 }
@@ -95,65 +129,82 @@ body {
      border-style: none;
     outline: none !important;
 }
+/***********************************/
+ /* Clear button */
+/********************************/
 
-.search-header:after {
-    display: block;
-    height: 4px;
-    background-color: #f5f4f4;
-    content: " ";
-    width: 375pt;
-    margin: 0, auto;
-    margin: 30px -15px 0px -15px;
+.clear-button {
+    flex: 1 0 auto;
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    line-height: 44px;
+    float: right;
+    width: 25px;
 }
+
+.lBbtTb {
+    height: 100%;
+    color: #80868b;
+    vertical-align: middle;
+    outline: none;
+}
+
+.z1asCe {
+    display: inline-block;
+    fill: #80868b;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+.z1asCe svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.searchBar > input:not([value=""]) + .clear-button {
+        display: flex;   
+}
+
 .section-header {
     color: #242A4B;
     font-size: 18pt;
     text-align: left;
     font-family: pedija-bold;
     opacity: 100%;
-    margin-top: 40px;
+    margin-top: 35px;
 	margin-bottom: 35px;
-    height: 22pt;
+    height: 20pt;
     width: 100%;
 }
 .location-detect p {
-    width: auto;
-    height: 20px;
+    display: block;
+    float: left;
+    width: calc(100% - 51px);
+    height: 40px;
     font-size: 14pt;
-    text-align: left;
     color: #541871;
     opacity: 100%;
     margin-left:10px;
-    display: inline;
-}
-
-.location-next-icon {
-    float: right;
-    margin-top: 5px;
-    color: #AFB1BC;
-    width: 10px;
-    height: 19px;
+    
 }
 
 .location-detect a:hover {
      text-decoration: none;
+     outline: none !important;
 }
-.location-section:after {
-    display: block;
-    height: 1pt;
-    background-color: #EDEDED;
-    content: " ";
-    width: 375pt;
-    margin: 0, auto;
-    margin: 20px -15px 20px -15px;
-}
-
 
 .img-container {
     width: 63pt;
     height: 63pt;
     margin-left: 7%;
-    margin-top: 25%; 
+    margin-top: 20%; 
     justify-content: center;
     padding: 10pt;
     background-color: rgba(250, 158, 10, 0.55); 
@@ -170,10 +221,17 @@ body {
     height: 43.15pt;
 }
 
-input {
-    
+.location-detect {
+     height: 40px;
+    max-width: 100%;
+    zoom: 1;
 }
 
-img {
-    
+@media screen and (max-width: 240px) {
+    .divider-2pt:after {
+        margin-top: 125px;
+    }
+    .location-detect {
+        margin-top: 50px;
+    }
 }
